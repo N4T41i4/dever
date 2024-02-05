@@ -8,15 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img  class="hero__logo"src="./images/aniver.svg" alt="aniver">
-            <p  class="hero__text">Um dia especial está chegando.Venha comemorar comigo o meu aniversário! 56d 19h </p>
+            <p  class="hero__text">Um dia especial está chegando.Venha comemorar comigo o meu aniversário! <span id="contador"></span> </p>
+        </div>
+        <div class="infos_bar">
+            <ul class="infos_bar__infos">
+                <li class="infos_bar__infos__item"><b>Localização</b>Rua ABC -Volta Redonda - Rio de Janeiro</li>
+                <li class="infos_bar__infos__item"><b>Quando</b>27/05/2024</li>
+            </ul>
+            <a href="#" class="button button-primary">Venha</a>
         </div>
     </header>
-    
+    <section class="event event--festa" >
+        <div class="container"data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Festa</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga expedita, mollitia nam iure dignissimos ipsum. Blanditiis, inventore. Fugiat, voluptatum minus cum nisi doloribus et, facilis, repellendus mole
+                    stiae dolor sapiente possimus?</p>
+            </div>
+            <img class="event__image" src="./images/festa.jpg" alt="Festa">
+        </div>
+    </section>
+    <section class="event event--comida event--image-left" >
+        <div class="container"data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Comida</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga expedita, mollitia nam iure dignissimos ipsum. Blanditiis, inventore. Fugiat, voluptatum minus cum nisi doloribus et, facilis, repellendus mole
+                    stiae dolor sapiente possimus?</p>
+            </div>
+            <img class="event__image" src="./images/festa.jpg" alt="Festa">
+        </div>
+    </section>
+    <section class="event event--local ">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Local</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga expedita, mollitia nam iure dignissimos ipsum. Blanditiis, inventore. Fugiat, voluptatum minus cum nisi doloribus et, facilis, repellendus mole
+                    stiae dolor sapiente possimus?</p>
+            </div>
+            <img class="event__image" src="./images/festa.jpg" alt="Festa">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
